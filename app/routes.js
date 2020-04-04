@@ -29,6 +29,21 @@ module.exports = function(app, passport, db) {
         })
     });
 
+    app.get('/messageBoard', isLoggedIn, function(req, res) {
+      //get request grabs profile function
+      // routes js line 14-19 is our request. GET is what we use to achieve this
+        db.collection('messages').find().toArray((err, result) => {
+          //reuest to grabbatabase collection named message,into array
+          if (err) return console.log(err)
+          //conditional console logged for error
+          res.render('messageBoard.ejs', {
+            user : req.user,
+            messages: result
+          })
+        })
+    });
+
+
     // LOGOUT ==============================
     app.get('/logout', function(req, res) {
         req.logout();

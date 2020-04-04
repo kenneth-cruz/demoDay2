@@ -1,0 +1,33 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-color: beige;
+  background-image: url(whitePaintedWall.jpg);
+}
+img{
+  height: 200px;
+}
+h1{
+  color: blue;
+}
+.mainContainer{
+  background-color: none;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+.mainContainer{
+  background-image: url("cork-board.png");
+  background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+  height: 500px;
+  /* width: 80%; */
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 10% 10% 10%;
+}

@@ -3563,6 +3563,10 @@ input, select, textarea {
 
 /* Banner */
 
+.banner{
+	font-size: 40px;
+	color: red;
+}
 	#banner {
 		/* display: -moz-flex;
 		display: -webkit-flex;
